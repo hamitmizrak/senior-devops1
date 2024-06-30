@@ -1,9 +1,9 @@
 
 Git: Global Information Tracked
 VCS: Version Control System 
-Dağıtık (Distrubuted) olmasıdır.
-Locking(Kilitlenme)
-Conflict((Çakışma))
+Dağıtık ( Distrubuted) olmasıdır.)
+Locking ( Kilitlenme )
+Conflict ( Çakışma )
 Linus Torvalds(Linux Çekirdeğini yazan kişi) ve ekibiyle 2005 Yılında yazıyorlar.
 GitHub(Microsoft) 2008 yılında 
 Ücretsizdir
@@ -102,7 +102,18 @@ git commit -a -m "first commit"
 
 ##############################################################
 ##############################################################
--- 
+-- STATUS / LOG
+ 
+git log
+$ git log
+commit 96772f9e7b5c89c40edb5a95e4e5b27726a128fa (HEAD -> main, origin/main)
+Author: Hamit_Mizrak <hamitmizrak@gmail.com>
+Date:   Sun Jun 30 15:19:32 2024 +0300
+
+
+git status
+git restore --staged 96772f9e7b5c89c40edb5a95e4e5b27726a128fa
+
 
 
 
