@@ -310,8 +310,8 @@ https://github.com/settings/keys
 
 ##############################################################
 ##############################################################
--- PULL
-
+-- PULL : Bütün verileri alacaktır.
+git pull
 
 
 
@@ -319,15 +319,13 @@ https://github.com/settings/keys
 ##############################################################
 ##############################################################
 -- FETCH
-
-
-
-
-
-##############################################################
-##############################################################
--- 
-
+git remote
+git fetch <RemoteAddress>
+git fetch origin
+git branch -a
+git checkout remotes/origin/main
+git checkout main
+git merge origin/main
 
 
 
