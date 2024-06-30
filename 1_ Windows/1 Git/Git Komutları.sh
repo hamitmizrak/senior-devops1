@@ -109,13 +109,12 @@ git graph
 --  DIFF
 git log 
 git diff commitID1 commitID2
-git diff 2cd1852 0b2badb
+git diff 9bf800160ec 3754992d3a4
 
 ##############################################################
 ##############################################################
 -- COMMIT 
 git commit -m "JIRA_TASK database crud added"
-
 
 -- Commit (aynı anda add ve commit)
 -- 1.YOL
@@ -127,13 +126,34 @@ git commit -a -m "first commit"
 
 # Commit Message
 git log
+<<<<<<< HEAD
 git commit --amend -m "Mesajı Değiştir"
+=======
+git commit --amend -m "commit sonrası"
+>>>>>>> fe878b7b7e82a8574cd1daa3ca3914c320248d68
 
 
 ##############################################################
 ##############################################################
+-- STASH 
+-- Yapılacak bir işin commit yapmadan saklaması durumudur.
+-- Dikkat: Stash öncesinde mutlaka "git add ." yapmalıyız.
 
-22222222
+git stash --help
+git stash list 
+
+# Senaryo-1
+git add .
+git stash => stash@{0}
+git stash list
+git stash apply stash@{0}
+git stash drop stash@{0}
+
+# Senaryo-2
+git add .
+git stash save "malatya"
+git stash list
+git stash pop  => En üsten olan stash al ve sil
 
 
 ##############################################################
