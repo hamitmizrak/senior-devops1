@@ -179,6 +179,7 @@ git tag v1.0.0
 git tag
 git show v1.0.0
 git push <remoteAlias> v1.0.0
+git remote 
 git push origin v1.0.0
 
 
@@ -191,21 +192,80 @@ git push origin v2.0.0
 
 # switch /delete
 git checkout v1.0.0
+git checkout main
 git checkout v2.0.0
 git tag --delete v1.0.0
 git tag --delete v2.0.0
+git tag --delete v1.0.0 v2.0.0
+git push origin --tags
 
 ##############################################################
 ##############################################################
--- 
+-- Branch
+-- Aynı anda birden fazla kullanıcı çalışabilmesini sağlıyor.
+-- NOT: Branch yapmadan önce mutlaka `git add ve git commit` yapmalıyız
+
+git branch -M  main 
+git branch --help 
 
 
+git branch
+git branch --all
+git branch -a
 
+# Senaryo-1
+git add .
+git commit -m "Senaryo-1"
+git branch backend => Branch oluştur
+git branch
+git checkout backend => Branch dallan
+cat >> backend.txt
+git add .
+git commit -m "backend branchi"
+git push -u origin backend
+git switch main
+git merge backend
+git log --decorate --oneline --graph --all
+git branch -D backend => backend branch sil
+
+
+# Senaryo-2
+git add .
+git commit -m "Senaryo-2"
+git checkout -b frontend => Branch oluştur ve dallan
+cat >> frontend.txt
+git add .
+git commit -m "frontend branchi"
+git push -u origin frontend
+git switch main
+git merge --no-ff frontend
+git log --decorate --oneline --graph --all
+git branch -D frontend => frontend branch sil
+
+# Senaryo-3
+git add .
+git commit -m "Senaryo-3"
+git checkout -b webservice => Branch oluştur ve dallan
+cat >> webservice.txt
+git add .
+git commit -m "webservice branchi"
+git push -u origin webservice
+git switch main
+git rebase webservice
+git log --decorate --oneline --graph --all
+git branch -D webservice => webservice branch sil
+
+# Merge çeşitleri
+# fast-forward 
+# no-fast-forward
+# squash
+
+# Merge - Rebase Arasındaki farklar 
 
 
 ##############################################################
 ##############################################################
--- 
+-- SSH KEY
 
 
 
