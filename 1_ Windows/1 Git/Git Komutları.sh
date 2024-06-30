@@ -2,7 +2,6 @@
 Git: Global Information Tracked
 VCS: Version Control System 
 Dağıtık ( Distrubuted) olmasıdır.)
-Locking ( Kilitlenme )
 Conflict ( Çakışma )
 Linus Torvalds(Linux Çekirdeğini yazan kişi) ve ekibiyle 2005 Yılında yazıyorlar.
 GitHub(Microsoft) 2008 yılında 
