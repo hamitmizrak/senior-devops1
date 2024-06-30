@@ -1,0 +1,6 @@
+-- Version
+mvn -v
+
+
+-- Path (Ortam Değişkenleri)
+C:\Apache Maven\apache-maven-3.9.8-bin\bin
