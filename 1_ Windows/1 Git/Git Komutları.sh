@@ -108,7 +108,7 @@ git log
 $ git log
 commit 96772f9e7b5c89c40edb5a95e4e5b27726a128fa (HEAD -> main, origin/main)
 Author: Hamit_Mizrak <hamitmizrak@gmail.com>
-Date:   Sun Jun 30 15:19:32 2024 +0300
+Date:   Sun Jun 30 15:19:32 2024 +0300   
 
 
 git status
