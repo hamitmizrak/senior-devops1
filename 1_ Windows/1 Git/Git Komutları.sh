@@ -80,25 +80,6 @@ git restore jav*
 # aynı anda sadece benim istediğim dosyaları ekle
 git add deneme1.txt deneme2.txt 
 
-##############################################################
-##############################################################
--- COMMIT 
-git commit -m "JIRA_TASK database crud added"
-
-
-
-##############################################################
-##############################################################
--- ADD VE COMMIT AYNI ANDA
--- 1.YOL
-git add .
-git commit -m "first commit"
-
--- 2.YOL  (dikkat önceden add olması şartıyla)
-git commit -a -m "first commit"
-
-
-
 
 ##############################################################
 ##############################################################
@@ -113,6 +94,26 @@ Date:   Sun Jun 30 15:19:32 2024 +0300
 
 git status
 git restore --staged 96772f9e7b5c89c40edb5a95e4e5b27726a128fa
+
+
+
+##############################################################
+##############################################################
+-- COMMIT 
+git commit -m "JIRA_TASK database crud added"
+
+
+-- Commit (aynı anda add ve commit)
+-- 1.YOL
+git add .
+git commit -m "first commit"
+
+-- 2.YOL  (dikkat önceden add olması şartıyla)
+git commit -a -m "first commit"
+
+
+##############################################################
+##############################################################
 
 
 
