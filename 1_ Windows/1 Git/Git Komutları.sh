@@ -111,6 +111,10 @@ git commit -m "first commit"
 -- 2.YOL  (dikkat önceden add olması şartıyla)
 git commit -a -m "first commit"
 
+# Commit Message
+git log
+git commit --amend -m "commit sonrası"
+
 
 ##############################################################
 ##############################################################
