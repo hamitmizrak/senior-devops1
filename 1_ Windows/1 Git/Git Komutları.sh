@@ -33,19 +33,12 @@ git config --system (Bütün kullanıcılar ve projeler)
 
 ##############################################################
 ##############################################################
--- ALIAS
-git log --decorate --oneline --graph --all
-
-git config --global alias.graph "log --decorate --oneline --graph --all"
-git graph
-
-##############################################################
-##############################################################
 -- git normalde 100MB yükleme kapasitesine sahiptir
 Biz bu rakamı artıracağız.
 
 ##############################################################
 ##############################################################
+-- INIT / REMOTE
 echo "# senior-devops1" >> README.md
 git init
 git add .
@@ -53,12 +46,18 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/hamitmizrak/senior-devops1.git
 git push -u origin main
+# git push --set-upstream origin main
+
+# Remote Addresi Göster
+git remote -v
+
+git remote ==> origin remote name
+git remote set-url origin https://github.com/hamitmizrak/senior-devops44.git
 
 ##############################################################
 ##############################################################
 -- CLONE
 git clone https://github.com/hamitmizrak/senior-devops1.git
-
 
 
 ##############################################################
@@ -80,22 +79,37 @@ git restore jav*
 # aynı anda sadece benim istediğim dosyaları ekle
 git add deneme1.txt deneme2.txt 
 
-
 ##############################################################
 ##############################################################
--- STATUS / LOG
- 
-git log
-$ git log
-commit 96772f9e7b5c89c40edb5a95e4e5b27726a128fa (HEAD -> main, origin/main)
-Author: Hamit_Mizrak <hamitmizrak@gmail.com>
-Date:   Sun Jun 30 15:19:32 2024 +0300   
-
+-- STATUS
 
 git status
 git restore --staged 96772f9e7b5c89c40edb5a95e4e5b27726a128fa
 
+##############################################################
+##############################################################
+-- ALIAS
+git log --decorate --oneline --graph --all
 
+git config --global alias.graph "log --decorate --oneline --graph --all"
+git graph
+
+##############################################################
+##############################################################
+--  LOG
+git log
+$ git log
+commit 96772f9e7b5c89c40edb5a95e4e5b27726a128fa (HEAD -> main, origin/main)
+Author: Hamit_Mizrak <hamitmizrak@gmail.com>
+Date:   Sun Jun 30 15:19:32 2024 +0300
+git graph
+
+##############################################################
+##############################################################
+--  DIFF
+git log 
+git diff commitID1 commitID2
+git diff 2cd1852 0b2badb
 
 ##############################################################
 ##############################################################
@@ -113,7 +127,7 @@ git commit -a -m "first commit"
 
 # Commit Message
 git log
-git commit --amend -m "commit sonrası"
+git commit --amend -m "Mesajı Değiştir"
 
 
 ##############################################################
