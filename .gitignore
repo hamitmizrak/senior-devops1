@@ -1,0 +1,8 @@
+# Dosyayı takip etme
+secret.txt
+
+# Dizinleri takip etme
+/node_modules
+
+# Sonu log olan dosyaları takip etme
+*.log
