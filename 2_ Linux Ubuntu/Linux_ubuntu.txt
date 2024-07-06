@@ -8,6 +8,7 @@ Linux
 - bash: Bourne Again Shell (Linux default kabuk) 
 
 --------------------------------------------------------------------
+###### UBUNTU ######################################################
 Ubuntu
 - Linux dağıtımlarından en popüler olanı.
 - 1990 Yıllarında Linus Torvalds ve ekibiyle linux yazılıyor.
@@ -21,8 +22,33 @@ Ubuntu
 - Ubuntu: Güney Afrika Dilinde => Başka nesneye saygı.
 
 --------------------------------------------------------------------
+###### UBUNTU/WINDOWS ##############################################
+Dosya Sistemi
+Windows => FAT(Eski), NTFS(Yeni)
+Linux   => Ext2,3,4
+
+
 --------------------------------------------------------------------
--- PORT
+###### UBUNTU/WINDOWS ##############################################
+Dosya Sistemi
+/boot : Kernel boot dosya ve dizinleri
+/dev  : Fiziksel donanımlara erişim
+/etc  : Servis yapılandırma dosyaları
+/home : Ana dizin 
+/lib   : boot libraries
+/media
+/opt
+/proc 
+/root 
+/snap 
+/tmp 
+/usr
+/var
+
+
+--------------------------------------------------------------------
+###### PORT ########################################################
+
 Bilgisayar binary (2 tabanda)
 2^16=65536
 0-65535 Port
@@ -40,5 +66,40 @@ Bilgisayar binary (2 tabanda)
 6379  => Redis
 8080  => Tomcat default
 
-
 49152<=PORT<=65535 (Dynamics Port)
+--------------------------------------------------------------------
+###### HTTP STATUS #################################################
+Http Status Codes
+1XX = Information
+2XX = Success
+3XX = Redirection
+4XX = Client Error
+5XX = Server Error
+
+
+---------------------------------------------------------
+apt-get update : Paketlerimizin versiyon farkları araştırsın ve liste güncellensin.
+apt-get upgrade: Güncellenmiş listeyi kurmak içindir. En son sürüme geçilecektir.
+apt-get dist-upgrade: En güncel kernek sürümüne taşıyor.
+sudo apt-get update && apt-get upgrade -y
+
+--------------------------------------------------------------------
+###### KOMUTLAR ###################################################
+curl --version 
+sudo apt-get install curl 
+sudo apt-get install zip 
+sudo apt-get install gunzip 
+ping google.com 
+curl google.com
+
+mkdir deneme
+info mkdir 
+man mkdir
+whereis java
+hostname --help 
+
+
+--------------------------------------------------------------------
+###### LIBRARIES ###################################################
+PID: Process içindir
+FTP: File Transfer Protocol
