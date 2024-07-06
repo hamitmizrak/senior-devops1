@@ -85,8 +85,10 @@ sudo apt-get update && apt-get upgrade -y
 
 --------------------------------------------------------------------
 ###### KOMUTLAR ###################################################
+sudo apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y
+
 curl --version 
-sudo apt-get install curl 
+sudo apt-get install curl -y
 sudo apt-get install zip 
 sudo apt-get install gunzip 
 ping google.com 
@@ -96,8 +98,55 @@ mkdir deneme
 info mkdir 
 man mkdir
 whereis java
+whatis ls
 hostname --help 
+clear
+whoami
+history
 
+mkdir deneme 
+rmdir deneme 
+rm -rf deneme
+
+mv deneme.txt data.txt
+cp data.txt deneme/
+
+diff data.txt data2.txt
+
+grep kelime data.txt
+
+cd deneme 
+cd ..
+cd / 
+cd ~/Desktop
+
+ls
+ls -al
+ls -lar 
+
+cat >> deneme.txt
+cat deneme.txt
+tac deneme.txt
+
+tail deneme.txt => Son 10 tane datayı göster
+tail -n 5 deneme.txt
+tail -f deneme.txt
+head -n 5 deneme.txt 
+
+sudo apt install vim -y
+vim deneme.txt
+vi deneme.txt
+
+
+d rwx rwx r-x
+d: directory
+r:read (2^2=4)
+w=write (2^1=2)
+x=execute (2^0=1)
+d775  d755
+rwx: Kullanıcının 
+rwx: Group
+r-x: Diğer
 
 --------------------------------------------------------------------
 ###### LIBRARIES ###################################################
