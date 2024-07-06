@@ -1,0 +1,44 @@
+Linux
+1-) Kernel (Çekirdek): 
+- Yazılım ile Donanım arasındaki haberleşmeyi sağlıyor.
+- Bütün kaynaklarının yönetimini sağlıyor.
+
+2-) Shell (Kabuk)
+- Kullanıcıdan(client) gelen istekleri (request) kernel'a iletiyor.
+- bash: Bourne Again Shell (Linux default kabuk) 
+
+--------------------------------------------------------------------
+Ubuntu
+- Linux dağıtımlarından en popüler olanı.
+- 1990 Yıllarında Linus Torvalds ve ekibiyle linux yazılıyor.
+- 2004 Yılında Ubuntu tanıtılıyor.
+- Unix İşletim sistemi paralı
+- Linux İşletim sistemleri ücretsiz
+- Linux open source(Açık kaynak kodludur)
+- GNU: Gnu is Not Unit
+- GPL: Free as in Freedom (GNU General Public License)
+- Ubuntu Debian çekirdeğini kullana dağıtımdır.
+- Ubuntu: Güney Afrika Dilinde => Başka nesneye saygı.
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+-- PORT
+Bilgisayar binary (2 tabanda)
+2^16=65536
+0-65535 Port
+
+0<=PORT<=1023 (Well Know Port)
+20  => FTP
+22  => SSH
+80  => HTTP
+443 => HTTPS
+
+1024<=PORT<=49151 (Registed Port)
+3306  => Mysql
+5432  => Postgresql
+27017 => Mongo
+6379  => Redis
+8080  => Tomcat default
+
+
+49152<=PORT<=65535 (Dynamics Port)
