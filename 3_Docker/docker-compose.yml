@@ -1,0 +1,17 @@
+#$ docker-compose -v
+# docker-compose up
+# docker-compose up -d
+# docker-compose -f Custom_Docker_compose.yml up
+# docker-compose -f Custom_Docker_compose.yml up -d
+
+# Version
+version: '3.1'
+
+services:
+  backend:
+    container_name: blog
+    image: blog
+    restart: always
+    build: ./
+    ports:
+      - "4444:4444"
