@@ -40,7 +40,7 @@ read -p "\n### ${CHMOD} ###" chmodResult
 if [[ $chmodResult == "E" || $chmodResult == "e" ]]
 then
     echo -e "Shell Dosyalarına Yetkiler Başladı"
-    sudo chmod +x _1_common.sh
+    sudo chmod +x _1_Common.sh
     sudo chmod +x _2_git.sh
     sudo chmod +x _3_vs_code.sh
     sudo chmod +x _4_jdk.sh
