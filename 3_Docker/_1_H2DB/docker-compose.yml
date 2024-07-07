@@ -7,6 +7,7 @@
 # Version
 version: '3.1'
 
+# Services
 services:
   backend:
     container_name: blog
@@ -15,3 +16,11 @@ services:
     build: ./
     ports:
       - "4444:4444"
+    networks:
+      - blog_network
+
+# Networks
+networks:
+  blog_network:
+    name: blog_network
+    driver: bridge

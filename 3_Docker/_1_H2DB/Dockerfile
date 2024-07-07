@@ -1,5 +1,4 @@
 # Image
-# adoptopen/openjdk11
 FROM openjdk:21
 
 # ARG
@@ -24,3 +23,5 @@ ENTRYPOINT ["java", "-jar","/blog.jar"]
 # docker container run -d -p 5555:4444 --name malatya2 blog
 # docker container run --rm -d -p 6666:4444 --name malatya3 blog
 # docker container prune
+
+# docker container exec -it containerID bash
