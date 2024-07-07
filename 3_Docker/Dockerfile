@@ -1,4 +1,5 @@
 # Image
+# adoptopen/openjdk11
 FROM openjdk:21
 
 # ARG
