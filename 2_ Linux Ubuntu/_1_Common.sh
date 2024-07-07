@@ -40,15 +40,16 @@ read -p "\n### ${CHMOD} ###" chmodResult
 if [[ $chmodResult == "E" || $chmodResult == "e" ]]
 then
     echo -e "Shell Dosyalarına Yetkiler Başladı"
-    sudo chmod +x _1_Common.sh
+    sudo chmod +x _1_common.sh
     sudo chmod +x _2_git.sh
     sudo chmod +x _3_vs_code.sh
-    sudo chmod +x _4_JDK.sh
-    sudo chmod +x _5_Maven.sh
-    sudo chmod +x _6_Docker.sh
-    sudo chmod +x _7_Postgresql.sh
-    sudo chmod +x _8_SonarQube.sh
-    sudo chmod +x _9_Jenkins.sh
+    sudo chmod +x _4_jdk.sh
+    sudo chmod +x _5_maven.sh
+    sudo chmod +x _6_docker.sh
+    sudo chmod +x _7_postgresql.sh
+    sudo chmod +x _8_sonarQube.sh
+    sudo chmod +x _9_apache_tomcat.sh
+    sudo chmod +x _10_jenkins.sh
 else
     echo -e "Shell Dosyalarına Yetkiler Başlanmadı !!!"
 fi
