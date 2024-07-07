@@ -24,11 +24,11 @@ echo -e "\n### ${COMMON_INFORMATION} ###"
 # Update
 sleep 2
 echo -e "\n### ${UPDATE} ###"
-read -p "\n### ${IS_UPDATE} ###" updatedResult
+read -p "\n### ${IS_UPDATE}\n ###" updatedResult
 if [[ $updatedResult == "E" || $updatedResult == "e" ]]
 then
     echo -e "Kernel Güncellenmesi Başladı"
-    sudo apt-get update && apt-get upgrade -y
+    sudo apt-get update && sudo apt-get upgrade -y
 else
     echo -e "Kernel Güncellemenmesi Gerçeklemedi !!!"
 fi
