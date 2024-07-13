@@ -38,10 +38,10 @@ accessPermission() {
         ls -l reboot.sh
 
         # İzinleri Sembolik Mod olarak değiştirmek
-        chmod u+rwx,g+rx,o+rx ../script
+        # chmod u+rwx,g+rx,o+rx ../script
 
         # İzinleri Sayısal Mod olarak değiştirmek
-        chmod 755 ../script
+        # chmod 755 ../script
 
         # Bash scriptlere izin vermek
         sudo chmod +x ./countdown.sh
@@ -351,6 +351,7 @@ packageInstall() {
         sudo apt-get install nginx -y
         sudo systemctl start nginx
         sudo systemctl enable nginx
+        curl localhost:80
 
         # Geriye Say
         sudo ./countdown.sh

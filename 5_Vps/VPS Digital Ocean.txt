@@ -1,12 +1,12 @@
 RAM: 4GB
 STORAGE: 80GB
-ssh root@104.248.22.82 
+ssh root@159.89.16.124
 Ubuntu12345@Ub
 
 
 cd /home
 ls -al
-git clone https://github.com/hamitmizrak/Offline-Linux-Ubuntu-BashScript.git
+git clone https://github.com/hamitmizrak/senior-devops1
 
 cd Offline-Linux-Ubuntu-BashScript/script
 sudo chmod  +x  _1_common.sh
