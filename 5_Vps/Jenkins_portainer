@@ -8,3 +8,15 @@ portainer:
 ---------------------
 username: admin
 password: adminadminadmin
+
+
+Dockerfile -docker-compose.yml (Mysql-Postgresql)
+jmeter - Docker nginx oluştururuz ve stress testi
+SonarQube (Windows, Ubuntu, Docker)
+Grafana / Prometheus
+Tomcat
+GitLab - Jenkins
+Kubernates
+Ansible
+nexus
+openshift
