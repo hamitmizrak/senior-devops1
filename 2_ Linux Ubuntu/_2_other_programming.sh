@@ -10,7 +10,7 @@ CHMOD="Erişim İzni"
 INFORMATION="Genel Bilgiler Ports | NETWORKING"
 UFW="Uncomplicated Firewall Ggüvenlik duvarı Yöentim Araçı"
 LOGOUT="Sistemi Tekrar Başlatmak"
-CHECK="Yüklencek Paket bağımlılıkları"
+CHECK="Yüklenecek Paket bağımlılıkları"
 PACKAGE="Paket Sistemde Yüklü mü"
 JDK="JDK Kurmak"
 JENKINS="Jenkins"
@@ -742,12 +742,10 @@ apacheTomcatInstall
 # Tomcat Silmek
 apacheTomcatDelete
 
-
 ###################################################################
 ###################################################################
 # Docker Compose
 dockerCompose(){
-   
     echo -e "\n### ${DOCKERCOMPOSE} ###"
     read -p "\nDocker Compose Eklemek İstiyor musunuz ? E/H? " dockerComposeResult
     if [[ $dockerComposeResult == "E" || $dockerComposeResult == "e"  ]]
