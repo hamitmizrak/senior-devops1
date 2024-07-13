@@ -1,0 +1,78 @@
+docker info
+docker version
+docker -v
+
+docker search alpine
+docker pull alpine 
+docker images ls 
+winpty docker run exec -it alpine 
+####################################
+docker pull ubuntu 
+docker pull alpine 
+docker pull centos 
+docker pull nginx  
+docker pull mysql  
+docker pull httpd  
+#################################### 
+
+
+####################################
+-- CONTAINER 
+docker container --help 
+docker run hello-world
+docker container run hello-world
+
+docker search nginx 
+docker pull nginx 
+docker container run --publish   1111:80 nginx 
+docker container run --detach --publish   1111:80 nginx 
+docker container run --name my_nginx1 --detach --publish   1111:80 nginx 
+docker container run --name my_nginx1 -d -p 1111:80 nginx 
+
+docker container run --name my_nginx1 -d -p 1111:80 nginx 
+docker container run --name my_nginx1 -d -p 1111:80 nginx:latest 
+docker container run --name my_nginx1 -d -p 1111:80 nginx:1.15
+
+####################################
+-- IMAGE 
+docker image --help
+docker container image 
+
+
+####################################
+Best Practice
+docker search nginx 
+docker pull nginx
+
+
+docker container run --name my_nginx1 -d -p 1111:80 nginx
+curl localhost:1111
+
+docker container ls 
+docker container ls -a 
+docker container ps 
+docker container ps -a
+
+docker container stop my_nginx1
+docker container start my_nginx1
+
+docker container logs my_nginx1
+docker container logs -f my_nginx1 (Follow : Takip et)
+docker container logs --tail 10 my_nginx1 (son 10 tane log göster)
+
+docker container rm my_nginx1 
+docker container rm -rf my_nginx1 (Durdurmadan sil)
+docker container prune 
+
+docker container ls 
+docker container top my_nginx1 (PID)
+docker container inspect my_nginx1 (Detaylı inceleme)
+docker image inspect my_nginx1 (Detaylı inceleme)
+docker volume inspect my_nginx1 (Detaylı inceleme)
+docker network inspect my_nginx1 (Detaylı inceleme)
+docker container stats my_nginx1 (Performans kayıt)
+
+docker container run -it nginx bash (Yeni container oluştur ve bağlan)
+docker container exec -it nginx bash (Çalışan bir container bağlan)
+
+

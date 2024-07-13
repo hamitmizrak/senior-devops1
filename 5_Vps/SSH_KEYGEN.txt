@@ -1,0 +1,9 @@
+ssh-keygen -t rsa -b 4096 -C "hamitmizrak@gmail.com"
+Enter * 3
+
+cat ~/.ssh/id_rsa.pub
+
+https://cloud.digitalocean.com/account/security?i=dab092
+SSH CREATE
+
+

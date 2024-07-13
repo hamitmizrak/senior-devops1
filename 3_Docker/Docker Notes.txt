@@ -1,0 +1,52 @@
+Bare-Metal
+Virtualization
+Containerzation
+Hyper-V 
+hypervisor: Aynı donanım üzerindenn birden fazla işletim sistemini çalıştırılmasın olayıdır.
+
+Docker 2008 yılında Solomon Hykes tarafından go diliyle yazılıyor.
+LXC(Linux Container) üzerine kurulu bit container engineering
+izole edilmiş containerler
+CI/CD
+
+
+Docker Engine 
+Docker Daemon :
+Docker CLI : 
+
+Docker Neden Kullanıyoruz ?
+Hızlı derleme, test, dağıtım, Ölçeklendirme
+Docker Hypervisor katmanına olmayan yani LXC(Linux Container) üzerine kurulu ve açık kaynak kodlu ve izole edilmiş bir platform yapısıdır.
+
+Docker CE (community Edition) Ücretsiz , küçük ve orta projelerde ,  Minor branch patch (7 ay )
+Docker EE (Enterprice Edition) Ücretli (Destek) Büyük projelerde  ,  Minor branch pathc (24 ay )
+
+docker pull işlemlerinde katmanlarla local servera ekleme yapılır.
+
+Image : Çalıştırmak istediğim bir teknoloji için gerekli bütün ayarların toplamıdır. (Dockerfile)
+Container :  Çalışacak olan proje buradan ayağa kalkar.
+Dockerfile : Image dosyasını oluşturur.
+docker-compose : Birden fazla servis için kullanırız.
+Network : İzole edilmiş containerleri birbirine bağlamak içindir.
+Volume : Docker Host üzerinde çalışırır (stateless [Herhangi bir durum bilgisi olmayanan :HTTP, React JS]) Database, Tomcat vs ayar dosyalarım kalmasını istiyorsam
+docker container --name jnginx44 -v $(pwd):/usr/share/nginx/html -f - p 1111:80 nginx
+DockerHub
+swarm : Load Balancing docker info =>  docker swarm init
+Image Registry (DockerHub) : Docker imagelarını saklıyor.
+
+Dockerfile 
+docker-compose.yml 
+
+maven : ./mvn clean install -DskipTest
+
+
+NOT: Windows işletim sisteminde 
+1-) wsl --version
+2-) wsl --update
+3-) wsl --version
+
+WSL : Linux Ubuntu SubSystem For Linux
+
+Alpine : Hafif ve Güvenli bir linux dağıtımıdır.
+
+
