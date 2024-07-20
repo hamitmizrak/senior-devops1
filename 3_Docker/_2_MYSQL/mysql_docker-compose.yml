@@ -1,3 +1,21 @@
+# docker-compose --version
+# docker-compose -v
+# docker-compose up
+# docker-compose up -d
+# docker-compose -f Custom_Docker_compose.yml up
+# docker-compose -f Custom_Docker_compose.yml up -d
+# docker-compose down
+# docker-compose restart
+# docker-compose ps
+
+# restart: on-failure
+# restart: no => default olandır. Yani docker compose otomatik olarak restart yapsın
+# restart: unless-stopped => Konteynar durduğunda otomatik olarak yeniden başlasın
+# restart: always => Konteynar her zaman otomatik başlasın
+# restart: on-failure => konteryanar çökmesi halinde otomatik başlasın
+
+
+# JAVA PROPERTIES
 # spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQLDialect
 # spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 # spring.datasource.url=jdbc:mysql://localhost:3306/blog?createDatabaseIfNotExist=true&autoReconnect=true&allowPublicKeyRetrieval=true&useSSL=false
@@ -14,6 +32,8 @@ services:
     build: .
     ports:
       - "4444:4444"
+    volumes:
+      - mysql_volume_data:/var/lib/mysql
     environment:
       # spring.datasource.url=jdbc:mysql://localhost:3306/blog?createDatabaseIfNotExist=true&autoReconnect=true&allowPublicKeyRetrieval=true&useSSL=false
       - spring.datasource.url=jdbc:mysql://mysql_depends_on:3306/blog?createDatabaseIfNotExist=true&autoReconnect=true&allowPublicKeyRetrieval=true&useSSL=false
@@ -38,9 +58,49 @@ services:
       - MYSQL_PASSWORD=root
     restart: unless-stopped
 
-
 # Networks
 networks:
   springreactmysql:
     name: springreactmysql
     driver: bridge
+
+# Volumes
+volumes:
+  mysql_volume_data:
+    driver: local
+
+
+# docker ps
+# winpty docker container  exec -it  blog_react bash
+
+
+# docker-compose down
+# docker volume ls
+# docker volume inspect mysql_volume_data
+
+# docker-compose down
+# docker volume rm mysql_volume_data
+
+# winpty docker run -it --rm \
+# -v docker_apache_tomcat-conf://usr/local/tomcat/conf  \
+# -v docker_apache_tomcat-logs://usr/local/tomcat/logs \
+# -v docker_apache_tomcat-webapps://usr/local/tomcat/webapps \
+# blog_react bash
+
+# ls -al
+# cd usr/local/tomcat/logs
+# ls -al
+# cd usr/local/tomcat/webapps
+# Bu komut şunları yapar:
+
+# docker run: Yeni bir container çalıştırır.
+# -it: İnteraktif terminal modunda çalıştırır.
+# --rm: Container kapatıldığında otomatik olarak siler.
+# -v tomcat-logs:/data: tomcat-logs volume'unu container içindeki /data dizinine bağlar.
+# ubuntu: Ubuntu tabanlı bir container çalıştırır.
+# bash: Container içinde bash shell çalıştırır.
+
+
+# deploy kısmında, Swarm dağıtımı için ayarları yapıyoruz.
+# 3 kopya (replicas: 3) oluşturulacak, güncelleme yapılandırması
+# ve yeniden başlatma politikası belirlenmiştir.

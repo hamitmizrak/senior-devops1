@@ -1,8 +1,18 @@
-#$ docker-compose -v
+# docker-compose --version
+# docker-compose -v
 # docker-compose up
 # docker-compose up -d
 # docker-compose -f Custom_Docker_compose.yml up
 # docker-compose -f Custom_Docker_compose.yml up -d
+# docker-compose down
+# docker-compose restart
+# docker-compose ps
+
+# restart: on-failure
+# restart: no => default olandır. Yani docker compose otomatik olarak restart yapsın
+# restart: unless-stopped => Konteynar durduğunda otomatik olarak yeniden başlasın
+# restart: always => Konteynar her zaman otomatik başlasın
+# restart: on-failure => konteryanar çökmesi halinde otomatik başlasın
 
 # Version
 version: '3.1'
@@ -24,3 +34,24 @@ networks:
   blog_network:
     name: blog_network
     driver: bridge
+
+
+# docker ps
+# winpty docker container  exec -it  blog bash
+# ls -al
+# docker-compose down
+# docker volume ls
+
+# winpty docker run -it --rm \
+# -v docker_apache_tomcat-conf://usr/local/tomcat/conf  \
+# -v docker_apache_tomcat-logs://usr/local/tomcat/logs \
+# -v docker_apache_tomcat-webapps://usr/local/tomcat/webapps \
+# blog_react bash
+
+
+# docker run: Yeni bir container çalıştırır.
+# -it: İnteraktif terminal modunda çalıştırır.
+# --rm: Container kapatıldığında otomatik olarak siler.
+# -v tomcat-logs:/data: tomcat-logs volume'unu container içindeki /data dizinine bağlar.
+# ubuntu: Ubuntu tabanlı bir container çalıştırır.
+# bash: Container içinde bash shell çalıştırır.
