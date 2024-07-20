@@ -1,0 +1,8 @@
+Windows işletim sisteminde GitHub'a Büyük Veri göndermek istersem;
+Git LFS(Large File Storage) : Büyük Dosyalar
+
+git lfs install
+git lfs track "*.jar"
+git add .
+git commit -m "Jar Added"
+git push -u
