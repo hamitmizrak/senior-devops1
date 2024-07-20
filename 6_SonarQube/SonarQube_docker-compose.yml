@@ -55,7 +55,7 @@ services:
     image: sonarqube:latest
     container_name: sonarqube
     environment:
-      SONARQUBE_JDBC_URL: jdbc:postgresql://postgres_depends_on:5432/sonarqube
+      SONARQUBE_JDBC_URL: jdbc:postgresql://postgres:5432/sonarqube
       SONARQUBE_JDBC_USERNAME: sonarqube
       SONARQUBE_JDBC_PASSWORD: sonarqube
     depends_on:
