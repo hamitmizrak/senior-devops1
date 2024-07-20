@@ -1,7 +1,7 @@
 # Senior Devops
 
 ## Devops GitHUB URL
-[Backend-Frontend GitHub URL](https://github.com/hamitmizrak/senior-devops1)
+[Devops GitHub URL](https://github.com/hamitmizrak/senior-devops1)
 
 ## Backend - Frontend GitHUB URL
 [Backend-Frontend GitHub URL](https://github.com/hamitmizrak/senior-fullstack-developer1)
