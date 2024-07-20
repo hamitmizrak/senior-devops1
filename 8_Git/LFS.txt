@@ -9,3 +9,16 @@ git push
 git push -u 
 git push -u origin master --force
 git push -uf origin master
+
+
+NOT:
+Force Push Kullanırken Dikkat Edilmesi Gerekenler
+Diğer Kullanıcıları Bilgilendirin: Eğer bir ekip içinde çalışıyorsanız, zorlayarak gönderme yapmadan önce diğer ekip üyelerini bilgilendirin. Bu, olası çakışmaları ve veri kaybını önlemeye yardımcı olacaktır.
+
+Geri Alma İmkanı: Force push işlemi geri alınamaz ve veri kaybına neden olabilir. Bu nedenle, force push yapmadan önce yedek almanız veya değişikliklerinizi iyi değerlendirmeniz önemlidir.
+
+Alternatif Kullanımlar: Force push yerine --force-with-lease bayrağını kullanabilirsiniz. Bu bayrak, dalın sunucudaki son durumu ile yerel dalınızın temel durumu arasında bir uyuşmazlık olmadığından emin olur ve güvenli bir zorlayarak gönderme işlemi sağlar.
+
+sh code
+git push origin main --force-with-lease
+Bu yöntemle, zorlayarak gönderme işlemini güvenli ve dikkatli bir şekilde gerçekleştirebilirsiniz.
